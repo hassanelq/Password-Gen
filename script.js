@@ -15,14 +15,19 @@ const generatePass = () => {
 //when I click generete put the password 
 document.getElementById("generate").onclick = function() {
     let pass = generatePass();
-    document.getElementById("password").setAttribute("value", pass);
-    document.getElementById("password").setAttribute("type","password");
-
-    //when I click the icon copy the password 
-    document.getElementById("copy").onclick = function() {
-    navigator.clipboard.writeText(pass);
-    document.getElementById("alert").style = "right: 20px; transition: transform 1s;";
+    document.getElementById("password").value = pass;
+    document.getElementById("password").type ="password";
     
+    //when I click the icon copy the password 
+    if (document.getElementById("password").value) {
+        document.getElementById("copy").onclick = function() {
+            document.getElementById("password").select();
+            navigator.clipboard.writeText(pass);
+            document.getElementById("alert").classList.remove("active");
+            setTimeout(()=>{
+                document.getElementById("alert").classList.add("active");
+            },1700)
+        }
     }
 }
 
