@@ -16,13 +16,13 @@ const generatePass = () => {
 document.getElementById("generate").onclick = function() {
     let pass = generatePass();
     document.getElementById("password").value = pass;
-    document.getElementById("password").type ="password";
+    // document.getElementById("password").type ="password";
     
     //when I click the icon copy the password 
     if (document.getElementById("password").value) {
         document.getElementById("copy").onclick = function() {
             document.getElementById("password").select();
-            document.getElementById("password").stSelectionRange(0,9999);
+            document.getElementById("password").setSelectionRange(0,9999);
             navigator.clipboard.writeText(pass);
             document.getElementById("alert").classList.remove("active");
             setTimeout(()=>{

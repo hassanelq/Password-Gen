@@ -92,4 +92,45 @@ body .alert-container {
 }
 body .active.alert-container {
   right: -400px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body .container {
+    border-radius: 10px;
+    width: 300px;
+    height: 260px;
+    padding: 0px 20px 0px 20px;
+  }
+  body .container p {
+    font-size: 25px;
+  }
+  body .container .input-container {
+    border-radius: 8px;
+    border: solid 1.7px #2F2F2F;
+  }
+  body .container .input-container input {
+    border-radius: 8px;
+    width: 220px;
+    padding: 8px 5px 8px 20px;
+    font-size: 19px;
+    letter-spacing: 1.4px;
+  }
+  body .container .input-container svg {
+    height: 20px;
+    padding: 0px 8px;
+  }
+  body .container button {
+    width: 40%;
+    height: 15%;
+    font-size: 18px;
+  }
+  body .alert-container {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+  }
+  body .active.alert-container {
+    right: -400px;
+  }
 }/*# sourceMappingURL=style.css.map */
