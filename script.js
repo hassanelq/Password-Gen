@@ -22,6 +22,7 @@ document.getElementById("generate").onclick = function() {
     if (document.getElementById("password").value) {
         document.getElementById("copy").onclick = function() {
             document.getElementById("password").select();
+            document.getElementById("password").stSelectionRange(0,9999);
             navigator.clipboard.writeText(pass);
             document.getElementById("alert").classList.remove("active");
             setTimeout(()=>{
