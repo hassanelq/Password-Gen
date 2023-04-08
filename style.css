@@ -40,7 +40,7 @@ body .container .input-container input {
   border-style: none;
   border-radius: 10px;
   width: 330px;
-  padding: 8px 23px;
+  padding: 8px 5px 8px 23px;
   background-color: #dbdbdb;
   font-size: 23px;
   letter-spacing: 2px;
