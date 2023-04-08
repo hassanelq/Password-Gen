@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  font-family: "montserrat", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  transform: translateY(70%);
+}
+body .container {
+  background-color: aqua;
+  border-radius: 20px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+body .container p {
+  margin-top: 200px;
+  margin: 10px 20px;
+  font-weight: 500;
+}
+body .container .inputcontainer input {
+  margin: 0px 20px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: outset;
+  border-style: none;
+  width: 300px;
+  padding: 5px 10px;
+}
+body .container button {
+  width: 30%;
+  height: 15%;
+  margin: 10px 20px;
+}/*# sourceMappingURL=style.css.map */
